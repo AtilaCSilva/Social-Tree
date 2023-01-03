@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: Poppins, 'sans-serif';
+  color: var(--purple);
+
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
+
+header {
+  height: calc(120px + 30px);
+  margin: 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header div {
+  width: 150px;
+  height: 100%;
+  padding: 4px;
+  margin: 0 auto;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  transition-property: initial;
+  transition-duration: 2s;
+}
+
+header div img {
+  width: 100%;
+  border-radius: 9.99rem;
+}
+
+main {
+  text-align: center;
+}
+.links {
+  width: 100%;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  border: 1px solid var(--purple);
+  border-radius: 0.7rem;
+  padding: 5px;
+  text-align: center;
+  color: inherit;
+  width: 300px;
+
+  transition: 0.3s;
+}
+.links a:hover {
+  transform: scale(1.1);
+}
+
+.redes ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.redes li {
+  transition: 0.3s;
+}
+
+.redes li:hover {
+  transform: scale(0.7);
+}
+
+/*======> ANIMATION ======*/
+
+header div:hover {
+  opacity: 0;
+  transition: opacity 2s;
+}
